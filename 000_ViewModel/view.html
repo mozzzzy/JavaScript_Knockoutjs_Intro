@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8" />
+        <title>myView</title>
+        <script src="../knockout_source/knockout-3.4.2.js"></script>
+        <script src="./viewModel.js"></script>
+    </head>
+
+    <body>
+        The Name is <span data-bind="text: personName"></span>
+    </body>
+
+</html>
+<!--ViewModel と View を紐付けるには、ko.applyBindings() 関数。マニュアルによると、
+    最後尾に付けないといけないらしい-->
+<script>ko.applyBindings(myViewModel);</script>

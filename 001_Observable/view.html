@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8" />
+        <title>myView</title>
+		<script src="../knockout_source/knockout-3.4.2.js"></script>
+        <script src="./viewModel.js"></script>
+    </head>
+
+    <body>
+        The Name is <span data-bind="text: personName"></span>.
+        <br>
+        <br>
+
+        <!-- viewModelのpersonNameの値を変更する -->
+        <input type="text" data-bind="value: personName"/>
+        <button id="button">change Name</button>
+    </body>
+
+</html>
+<script>ko.applyBindings(myViewModel);</script>
